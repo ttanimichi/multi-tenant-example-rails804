@@ -14,12 +14,16 @@ require "action_view/railtie"
 # require "action_cable/engine"
 require "rails/test_unit/railtie"
 
+require 'apartment/elevators/subdomain'
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
 module MultiTenantExampleRails804
   class Application < Rails::Application
+    config.middleware.use Apartment::Elevators::Subdomain
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 8.0
 
