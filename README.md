@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+$ bin/rails r script/create_tenants.rb
+=== foo テナント作成中 ===
+2人のユーザーを作成しました
+4件の投稿を作成しました
+8件のコメントを作成しました
+=== foo テナント作成完了 ===
+=== bar テナント作成中 ===
+2人のユーザーを作成しました
+4件の投稿を作成しました
+8件のコメントを作成しました
+=== bar テナント作成完了 ===
+```
