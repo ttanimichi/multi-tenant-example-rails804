@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/citusdata/activerecord-multi-tenant.git
+  revision: 3b21347810d662d8a9ff3c1d62f9b28f933b97d8
+  branch: master
+  specs:
+    activerecord-multi-tenant (2.4.0)
+      rails (>= 6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -227,6 +235,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  activerecord-multi-tenant!
   debug
   pg (~> 1.1)
   propshaft
