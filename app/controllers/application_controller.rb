@@ -8,5 +8,6 @@ class ApplicationController < ActionController::Base
 
   def set_tenant_id
     Current.tenant_id = Tenant.find_by!(subdomain: request.subdomains.first).id
+    ActiveRecord::Base.connection.execute("SET app.current_tenant_id = #{Current.tenant_id}")
   end
 end
